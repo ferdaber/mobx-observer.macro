@@ -1,9 +1,9 @@
 {
-  "name": "@ferdaber/babel-macro-mobx-react-observer",
+  "name": "babel-macro-mobx-react-observer",
   "version": "0.1.0",
   "description": "",
-  "main": "index.js",
-  "types": "index.d.ts",
+  "main": "index.macro.js",
+  "types": "index.macro.d.ts",
   "scripts": {
     "test": "jest"
   },
