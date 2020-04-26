@@ -1,6 +1,6 @@
 [![Babel Macro](https://img.shields.io/badge/babel--macro-%F0%9F%8E%A3-f5da55.svg?style=flat-square)](https://github.com/kentcdodds/babel-plugin-macros)
 
-# babel-macro-mobx-react-observer
+# mobx-observer.macro
 
 A Babel macro to banish HOCs. This macro will transform the `observer` HOC for MobX into a "custom hook", allowing you to benefit from having an observer component without using an HOC or a decorator. This currently only supports function components.
 
