@@ -4,6 +4,8 @@
 
 A Babel macro to banish HOCs. This macro will transform the `observer` HOC for MobX into a "custom hook", allowing you to benefit from having an observer component without using an HOC or a decorator. This currently only supports function components.
 
+See this Codesandbox for the macro in action: https://codesandbox.io/s/mobx-observermacro-4b8zg
+
 ## Usage
 
 Say your file looks like this:
