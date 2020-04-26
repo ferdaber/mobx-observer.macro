@@ -1,5 +1,5 @@
 {
-  "name": "babel-macro-mobx-react-observer",
+  "name": "mobx-observer.macro",
   "version": "0.1.0",
   "description": "",
   "main": "index.macro.js",
@@ -10,6 +10,9 @@
   "keywords": [],
   "author": "Ferdy Budhidharma",
   "license": "ISC",
+  "peerDependencies": {
+    "mobx-react-lite": "^2"
+  },
   "dependencies": {
     "babel-plugin-macros": "^2.8.0"
   },
