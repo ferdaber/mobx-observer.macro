@@ -1,0 +1,45 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`macros 1. macros: 1. macros 1`] = `
+
+import useObserver from "./index.macro";
+import * as Mobx from "mobx-react-lite";
+import def, { someImport } from "mobx-react-lite";
+import "mobx-react-lite";
+
+function MyComponent(props) {
+  useObserver();
+  return <div />;
+}
+
+(function (props) {
+  useObserver();
+});
+
+const a = someHoc((props, ref) => {
+  useObserver(), (<div />);
+});
+
+const b = () => (useObserver(), (<div />));
+const c = () => useObserver();
+
+      ↓ ↓ ↓ ↓ ↓ ↓
+
+import * as Mobx from "mobx-react-lite";
+import def, { someImport, observer } from "mobx-react-lite";
+import "mobx-react-lite";
+const MyComponent = observer(function MyComponent(props) {
+  return /*#__PURE__*/ React.createElement("div", null);
+});
+observer(function (props) {});
+const a = someHoc(
+  observer((props, ref) => {
+    /*#__PURE__*/
+    React.createElement("div", null);
+  })
+);
+const b = observer(() => /*#__PURE__*/ React.createElement("div", null));
+const c = observer(() => {});
+
+
+`;
