@@ -1,6 +1,6 @@
 {
   "name": "mobx-observer.macro",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "A macro to transform mobx-react's observer HOC into a custom hook.",
   "main": "index.macro.js",
   "types": "index.macro.d.ts",
