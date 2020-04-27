@@ -2,6 +2,8 @@
 
 # mobx-observer.macro
 
+> This is a Babel macro that requires the `babel-plugin-macros` to run inside your build pipeline. For more information on how to set up Babel macros, visit its homepage: https://github.com/kentcdodds/babel-plugin-macros
+
 A Babel macro to banish HOCs. This macro will transform the `observer` HOC for MobX into a "custom hook", allowing you to benefit from having an observer component without using an HOC or a decorator. This currently only supports function components.
 
 See this Codesandbox for the macro in action: https://codesandbox.io/s/mobx-observermacro-4b8zg
